@@ -1,0 +1,9 @@
+<!--pages/position/position.wxml-->
+<view class="container">
+   <text>选择需要绑定的地址</text>
+   <view class="large" wx:for="{{myListPosition}}" wx:key="index" wx:for-item="info">
+            <tr bindtap="ClickItem" data-bean="{{info}}">
+               <td class="qwe">{{info.camera_series_positions}}</td> 
+            </tr>
+    </view>
+</view>

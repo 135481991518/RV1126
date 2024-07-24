@@ -1,0 +1,42 @@
+<view class="father">
+    <button bindtap="bindimage" class="button_top" style="font-size: 13px;">获取最新检测结果</button>
+    <button bindtap="bindimage_all" class="button_top" style="font-size: 13px;">获取最近七天检测结果</button>
+    <!-- <view wx:if="{{!show}}">
+            <image class="img_s" src="{{img_str}}" ></image>
+            <view class="text" wx:for="{{garbage}}" wx:for-item="info" wx:key="index" >
+                <span>时间：{{info.time}}</span>
+                <span> 第{{index+1}}类：{{info.category}}</span>
+                <span>识别率：{{info.accuracy}}</span>
+                <span>坐标：{{info.coordinate}}</span>
+            </view>
+    </view> -->
+    <view wx:if="{{!show}}">
+        <image class="img_s" src="{{img_str}}" ></image>
+        <view class="table">
+            <view class="tr bg-w">
+                <view class="th">时间</view>
+                <view class="th">类别</view>
+                <view class="th">识别率</view>
+                <view class="th">坐标</view>
+            </view>
+            <view class="tr bg-g" wx:for="{{garbage}}" wx:for-item="info" wx:key="index" >
+                    <view class="td">{{info.time}}</view>
+                    <view class="td">{{info.category}}</view>
+                    <view class="td">{{info.accuracy}}</view>
+                    <view class="td">{{info.coordinate}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="container" wx:else>
+        <view class="table">
+            <view class="tr bg-w">
+                <view class="th">垃圾种类</view>
+                <view class="th">垃圾数量</view>
+            </view>
+            <view class="tr bg-g" wx:for="{{data_keys}}" wx:for-index="index" wx:key="index" >
+                    <view class="td">{{data_keys[index]}}</view>
+                    <view class="td">{{data_values[index]}}</view>
+            </view>
+        </view>
+    </view>
+</view>

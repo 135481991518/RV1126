@@ -1,0 +1,43 @@
+page{
+    background-color: #fff;
+    font-size: 12px;
+}
+.content{
+    padding: 20rpx;
+    border-bottom: 1rpx solid #ddd;
+    display: flex;
+    position: relative;
+}
+.display_show {
+    display: block;
+    /* border: 1px solid beige; */
+    padding: 5px;
+}
+.display_none {
+    display: none;
+}
+.fr {
+    position: absolute;
+    right: 0px;
+    /* color: red; */
+}
+.btn {
+    width:100% !important;
+    color:#07c160;
+    position:fixed;
+    bottom:0px;      
+    display: inline-block;
+    font-size: 16px;
+}
+.fix {  
+    position:fixed;
+    bottom:0px;    
+    width: 100%;
+}
+.btns {
+    /* float: left; */
+    width:50% !important;
+    color:#07c160;  
+    display: inline-block;
+    font-size: 16px;
+}

@@ -1,0 +1,22 @@
+<!--pages/mobile/mobile.wxml-->
+<view class="content">
+   <view class="hr"></view>
+   <view class="numbg">
+     <view>+86</view>
+     <view><input placeholder="请输入手机号"  bindblur="mobileblur"/></view>
+   </view>
+   <view class="numyz">
+    <view class="yz">
+       <input type="text" bindinput="vinInput"  placeholder="请输入6位验证码" />
+     </view>
+    <button id="btn1" disabled="{{disabled2}}" type="{{btnstate2}}" bindtap="getCode">{{time}}</button>
+   </view>
+   <view>
+     <view class="xieyi">
+       <icon type="success" color="green" size="18"></icon>
+       <text class="agree">同意</text>
+       <text class="opinion">中国用户注册协议</text>
+     </view>
+   </view>
+    <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bindtap="bindDing" >绑定</button>
+ </view>

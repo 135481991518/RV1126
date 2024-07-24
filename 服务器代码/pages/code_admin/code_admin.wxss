@@ -1,0 +1,24 @@
+.numyz{
+    border: 1px solid #cccccc;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* background-color: #ffffff; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+  }
+  .numyz .yz{
+    width: 60%;
+    border-right: 1px solid #ccc;
+  }
+  .numyz .yz input {
+    margin-top: 16rpx;
+  }
+  #btn1 {
+    width:40%;
+    font-size: 16px;
+    /* color: #fff; */
+    /* background-color: rgb(0, 178, 106); */
+  }

@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/user2/user2",
+    "pages/mobile/mobile",
+    "pages/position/position",
+    "pages/content/content",
+    "pages/show_data/show_data",
+    "pages/code_admin/code_admin",
+    "pages/useMessage/useMessage",
+    "pages/message/message"
+  ],
+  "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "垃圾监测",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+        {
+            "pagePath": "pages/content/content",
+            "text": "首页",
+            "iconPath": "pages/image/首页.png",
+            "selectedIconPath": "pages/image/首页 (1).png"
+        },
+        {
+            "pagePath": "pages/user2/user2",
+            "text": "个人中心",
+            "iconPath": "pages/image/个人 用户 头像.png",
+            "selectedIconPath": "pages/image/个人用户头像(选中).png"
+        }
+    ]
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

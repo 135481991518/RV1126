@@ -1,0 +1,30 @@
+/* pages/position/position.wxss */
+.container {
+    /* position: relative; */
+    padding: 0;
+    width: 100%;
+    display: block;
+    background-color: pink;
+}
+.container text {
+    /* position: absolute; */
+    display: block;
+    width: 300rpx;
+    margin: 0 auto;
+}
+.container .large {
+    width: 100%;
+}
+
+.container .large tr{
+    display: block;
+    border: 1px solid black;
+}
+.container .large tr td{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+

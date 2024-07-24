@@ -1,0 +1,6 @@
+<view class="numyz">
+    <view class="yz">
+       <input type="text" bindblur="mobileblur"  placeholder="请输入6位邀请码" />
+     </view>
+    <button id="btn1" disabled="{{disabled}}" type="{{btnstate}}" bindtap="ivtcode">绑定</button>
+   </view>

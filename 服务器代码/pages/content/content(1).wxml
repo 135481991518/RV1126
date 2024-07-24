@@ -1,0 +1,94 @@
+<!-- 如果邀请码填写成功 就显示管理员的页面 -->
+<view class="admin" wx:if="{{adminyz}}">
+    <button bindtap="admin_bindimage" class="button_top">查看所有摄像头</button>
+    <button bindtap="admin_bindimage_all" class="button_top">统计所有垃圾信息</button>
+    <button bindtap="admin_binduser" class="button_top">查看普通用户</button>
+<view class="container" wx:if="{{selected}}">
+    <view class="table">
+        <view class="tr bg-w">
+            <view class="th">摄像头ID</view>
+            <view class="th">摄像头所属类别</view>
+            <view class="th ">部署位置</view>
+            <view class="th ">查看信息</view>
+        </view>
+        <view class="tr bg-g" wx:for="{{admin_camera}}" wx:key="index" wx:for-item="info" >
+                <view class="td">{{info.camera_id}}</view>
+                <view class="td">{{info.camera_series}}</view>
+                <view class="td">{{info.camera_position}}</view>
+                <view class="td" data-bean="{{info}}"  bindtap="bindSelect">查看</view>
+        </view>
+</view>
+</view>
+<view class="container" wx:if="{{click}}">
+    <view class="table">
+            <view class="tr bg-w">
+                <view class="th">摄像头ID</view>
+                <view class="th">摄像头部署位置</view>
+                <view class="th">垃圾种类</view>
+                <view class="th">垃圾数量</view>
+            </view>
+            <view class="tr bg-g" wx:for="{{admin_camera_data}}" wx:for-item="infos" wx:key="index" >
+                    <view class="td">{{infos.camera_id}}</view>
+                    <view class="td">{{infos.camera_position}}</view>
+                    <view class="td">{{infos.category}}</view>
+                    <view class="td">{{infos.num}}</view>
+            </view>
+        </view>
+</view>
+<view class="container" wx:if="{{chakan}}">
+    <view class="table">
+            <view class="tr bg-w">
+                <view class="th">ID</view>
+                <view class="th">用户名</view>
+                <view class="th">手机号</view>
+                <view class="th">绑定位置</view>
+                <view class="th">当前状态</view>
+                <view class="th">是否禁用</view>
+            </view>
+            <view class="tr bg-g" wx:for="{{userinfo}}" wx:for-item="uinfo" wx:key="index" >
+                    <view class="td">{{uinfo.id}}</view>
+                    <view class="td">{{uinfo.username}}</view>
+                    <view class="td">{{uinfo.phone}}</view>
+                    <view class="td">{{uinfo.position}}</view>
+                    <view class="td">{{uinfo.status}}</view>
+                    <view class="td" data-bean="{{uinfo}}"  bindtap="bindDisable">{{uinfo.state}}</view>
+            </view>
+        </view>
+</view>
+</view>
+<view class="father" wx:else>
+<button bindtap="bindimage" class="button_top" disabled="{{disabled}}" type="{{btnstate}}">选择当前位置的不同摄像头</button>
+<button bindtap="bindimage_all" class="button_top" disabled="{{disabled}}" type="{{btnstate}}">查看当前区域的所有垃圾信息</button>
+<view class="container" wx:if="{{selected}}">
+    <view class="table">
+        <view class="tr bg-w">
+            <view class="th">摄像头ID</view>
+            <view class="th">摄像头所属类别</view>
+            <view class="th ">部署位置</view>
+            <view class="th ">查看信息</view>
+        </view>
+        <view class="tr bg-g" wx:for="{{camera}}" wx:key="index" wx:for-item="info" >
+                <view class="td">{{info.camera_id}}</view>
+                <view class="td">{{info.camera_series}}</view>
+                <view class="td">{{info.camera_position}}</view>
+                <view class="td" data-bean="{{info}}"  bindtap="bindSelect">查看</view>
+        </view>
+</view>
+</view>
+<view class="container" wx:if="{{click}}">
+    <view class="table">
+            <view class="tr bg-w">
+                <view class="th">摄像头ID</view>
+                <view class="th">摄像头部署位置</view>
+                <view class="th">垃圾种类</view>
+                <view class="th">垃圾数量</view>
+            </view>
+            <view class="tr bg-g" wx:for="{{camera_data}}" wx:for-item="infos" wx:key="index" >
+                    <view class="td">{{infos.camera_id}}</view>
+                    <view class="td">{{infos.camera_position}}</view>
+                    <view class="td">{{infos.category}}</view>
+                    <view class="td">{{infos.num}}</view>
+            </view>
+        </view>
+</view>
+</view>

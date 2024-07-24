@@ -1,0 +1,18 @@
+<view wx:for="{{before_data}}" wx:for-item="info" wx:key="index" data-index="{{index}}" capture-bind:tap="fatherData" data-data='{{info}}'>
+    <view class="content">
+        <view class="display_show">地点:{{info.position}}</view>
+        <view class="display_show">时间:{{info.time}}</view>
+        <view class="display_show">种类:{{info.category}}</view>
+        <checkbox-group class="{{open?'display_none':'display_show'}},fr" bindchange="selectCheck" >
+            <checkbox  value="1"></checkbox>
+        </checkbox-group>
+    </view>
+</view>
+
+<view class="fix" wx:if="{{edit}}">
+    <button class="btn" bindtap="bindEdit">编辑</button>
+</view> 
+<view class="fix" wx:else>
+    <button class="btns" bindtap="cancelEdit">取消编辑</button>
+    <button class="btns" bindtap="deleteData">删除</button>
+</view>     

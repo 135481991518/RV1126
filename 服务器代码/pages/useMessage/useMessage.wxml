@@ -1,0 +1,30 @@
+<view class="content">
+    <text>本程序使用说明</text>
+</view>
+<view class="content">
+    <text>1.使用微信进行登录</text>
+</view>
+<image src="../image/Snipaste_2022-09-13_20-40-30.jpg" mode="heightFix"></image>
+<view class="content">
+    <text>2.能够实现绑定手机，绑定位置，反馈意见，以及填写邀请码用于区分管理员用户和普通用户</text>
+</view>
+<image src="../image/two.jpg" mode="heightFix"></image>
+<view class="content">
+    <text>其中，管理员用户能够实现以下功能,并可以通过点击查看获取指定摄像头的信息，且可以禁用普通用户的操作</text>
+</view>
+<image src="../image/3.jpg" mode="heightFix"></image>
+<view class="content">
+    <text>点击查看,进入此页面</text>
+</view>
+<image src="../image/4.jpg" mode="heightFix"></image>
+<view class="content">
+    <text>查看普通用户并可以禁用指定用户</text>
+</view>
+<image src="../image/5.jpg" mode="heightFix"></image>
+<view class="content">
+    <text>统计所有摄像头的垃圾信息</text>
+</view>
+<image src="../image/6.jpg" mode="heightFix"></image>
+<view class="content">
+    <text>注：普通用户的操作与此类似，但需要绑定地理位置，并且只能查看当前位置的信息</text>
+</view>
